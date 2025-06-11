@@ -15,11 +15,11 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 scripts_dir = os.path.join("units")
 sys.path.append(scripts_dir)
 import argparse
-from argparses import file_path_get
+from units.argparses import file_path_get
 
 #获取地址
-path = file_path_get()
-
+# path="D:\\AnimeV\\processed_character_parts\\character_parts"
+path =file_path_get()
 
 # 初始化MediaPipe姿态检测
 mp_pose = mp.solutions.pose
